@@ -51,11 +51,65 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    background: radial-gradient(66.18% 45.64% at -16.18% 74.97%, rgba(254, 185, 213, 0.37) 0%, rgba(254, 185, 213, 0) 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    , #F1DADA;
+    padding: 20px 30px 20px 30px;
+    border-radius: 30px;
 }
 
-.area_container_1 img {
+.texts_container_1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+}
+
+.title_container_1 h2 {
+    font-family: 'Texta Alt regular';
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #814D29;
+    margin: 0px;
+}
+
+.sub_title_container_1 p {
+    font-family: 'Texta Alt regular';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.01em;
+    color: #814D29;
+    margin: 0px;
+}
+
+.btn_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1BD741;
+    border-radius: 38px;
+    padding: 10px 15px 10px 15px;
     max-width: max-content;
-    width: 100%;
+    transition: all ease 200ms;
+}
+
+.btn_1 h2 {
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 0.01em;
+    color: #fff;
+    margin: 0px;
+}
+
+
+.btn_1:hover {
+    transform: scale3d(1.1, 1.1, 1.1);
 }
 
 .container_2 {
@@ -144,7 +198,7 @@ a {
     font-family: 'Texta Alt regular';
     font-weight: 400;
     font-size: 24px;
-    line-height: 34px;
+    line-height: 30px;
     letter-spacing: 0.01em;
     color: #814D29;
     margin: 0px;
@@ -154,10 +208,10 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #DFA89C;
+    background-color: #1BD741;
     border-radius: 38px;
-    padding: 15px 10px 15px 10px;
-    width: 180px;
+    padding: 10px 15px 10px 15px;
+    max-width: max-content;
     transition: all ease 200ms;
 }
 
@@ -180,7 +234,7 @@ a {
     display: flex;
     justify-items: center;
     width: 100%;
-    padding: 80px 0px 280px 0px;
+    padding: 80px 0px 200px 0px;
     margin: 140px 0px 0px 0px;
     background: radial-gradient(66.18% 45.64% at -16.18% 74.97%, rgba(254, 185, 213, 0.37) 0%, rgba(254, 185, 213, 0) 100%)
         /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
@@ -196,6 +250,7 @@ a {
     flex-direction: column;
     width: 100%;
     gap: 40px;
+    padding: 0px 20px;
 }
 
 .area_servicos {
@@ -295,6 +350,16 @@ a {
     text-transform: uppercase;
     color: #814D29;
     margin: 60px 0px -40px 0px;
+}
+
+.sub_title_4 p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    color: #814D29;
+    margin: 20px 0px -30px 0px;
 }
 
 .area_container_4 {
@@ -527,6 +592,25 @@ a {
     justify-content: center;
 }
 
+.owl-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    background-color: #DFAAA7 !important;
+    width: 12px !important;
+    height: 12px !important;
+    opacity: 0.8 !important;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+    width: 14px !important;
+    height: 14px !important;
+    opacity: 1 !important;
+}
 
 .card_comment {
     background: #F1DADA;
@@ -773,6 +857,29 @@ footer {
     margin: 0px;
 }
 
+.btn_undidade {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px 10px 15px;
+    max-width: max-content;
+    background-color: #1BD741;
+    border-radius: 38px;
+    transition: all ease 200ms;
+}
+
+.btn_undidade h2 {
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+.btn_undidade:hover {
+    transform: scale3d(1.1, 1.1, 1.1);
+}
+
 .sub_title_unidade p {
     font-family: 'Texta Alt regular';
     font-weight: 400;
@@ -792,12 +899,7 @@ footer {
 
 
 @media(max-width: 1024px) {
-    .area_container_1 img {
-        max-width: 540px;
-        width: 100%;
-        padding: 0px 20px;
-    }
-
+  
     .area_container_2 {
         flex-direction: column;
         align-items: center;
@@ -908,6 +1010,7 @@ footer {
 
     .title_servicos h2 {
         font-size: 22px;
+        line-height: 24px;
     }
 
     .text_int_card h2 {
@@ -925,12 +1028,12 @@ footer {
     }
 
     .container_4 {
-        padding: 40px 0px 280px 0px;
+        padding: 40px 0px 140px 0px;
         margin: 30px 0px 0px 0px;
     }
 
     .area_servicos {
-        margin: 40px 0px 0px 0px;
+        margin: 80px 0px 0px 0px;
     }
 
 
@@ -940,6 +1043,10 @@ footer {
         text-align: center;
         margin: 40px 0px -40px 0px;
         padding: 0px 20px;
+    }
+    .sub_title_4 p {
+        font-size: 18px;
+        line-height: 20px;
     }
 
     .texts_5 h2 {
@@ -999,7 +1106,9 @@ footer {
         font-size: 18px;
         line-height: 20px;
     }
-
+    .btn_undidade h2 {
+        font-size: 18px;
+    }
     .title_contato h2 {
         font-size: 20px;
     }
@@ -1022,13 +1131,18 @@ footer {
     #container_1 {
         height: 400px;
     }
-
-    .area_container_1 img {
-        max-width: 380px;
-        width: 100%;
-        padding: 0px 20px;
+    .area_container_1 {
+        padding: 20px 25px 20px 25px;
+        margin: 0px 20px;
     }
-
+    .title_container_1 h2 {
+        font-size: 20px;
+        line-height: 22px;
+    }
+    .sub_title_container_1 p {
+        font-size: 18px;
+        line-height: 20px;
+    }
     .card_container_2 {
         gap: 20px;
     }
