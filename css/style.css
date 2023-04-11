@@ -470,6 +470,7 @@ a {
     letter-spacing: 0.075em;
     color: #FFFFFF;
     margin: 0px;
+    text-transform: uppercase;
 
 }
 
@@ -629,16 +630,16 @@ a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 25px;
+    gap: 20px;
 
 }
-
 
 .perfil img {
-    max-width: max-content;
-    width: 100%;
+    width: 100px !important;
+    height: 100px;
+    border-radius: 100px;
+    object-fit: cover;
 }
-
 
 .name h2 {
     font-weight: 700;
@@ -650,14 +651,16 @@ a {
     margin: 0px;
 }
 
+
 .comment p {
     font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 22px;
+    line-height: 24px;
     text-align: center;
     letter-spacing: 0.01em;
     color: #D66B7E;
-    margin: 0px;
+    margin: -10px 0px 0px 0px;
+    padding: 0px 10px;
 }
 
 .container_6 {
