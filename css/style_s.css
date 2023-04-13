@@ -56,6 +56,8 @@ a {
 
 .texts_container_1 img {
     margin-bottom: 10px;
+    max-width: max-content;
+    width: 100%;
 }
 
 .texts_container_1 {
@@ -1135,6 +1137,9 @@ footer {
 }
 
 @media(max-width:480px) {
+    .texts_container_1 img {
+        max-width: 200px;
+    }
     #container_1 {
         height: 400px;
     }
@@ -1142,13 +1147,22 @@ footer {
         padding: 20px 25px 20px 25px;
         margin: 0px 20px;
     }
-    .title_container_1 h2 {
-        font-size: 20px;
-        line-height: 22px;
+    .container_1 {
+        height: 100%;
     }
-    .sub_title_container_1 p {
+    .title_container_1 h2 {
         font-size: 18px;
         line-height: 20px;
+    }
+    .sub_title_container_1 p {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .btn_3 h2 {
+        font-size: 16px;
+    }
+    .texts_container_1 {
+        gap: 15px;
     }
     .card_container_2 {
         gap: 20px;
