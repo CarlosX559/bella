@@ -331,7 +331,7 @@ svg {
 }
 
 .card_servico_2 {
-    background-image: url(../img_sobrancelhas/spa.png);
+    background-image: url(../img_spa/spa_das_sobrancelhas.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -456,7 +456,7 @@ svg {
 }
 
 .modelo_1 {
-    background-image: url(../img_sobrancelhas/bella_brow.png);
+    background-image: url(../img_spa/limpeza_de_pele.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -474,7 +474,7 @@ svg {
 }
 
 .modelo_2 {
-    background-image: url(../img_sobrancelhas/lamination.png);
+    background-image: url(../img_spa/bella_glow.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -486,7 +486,7 @@ svg {
 }
 
 .modelo_3 {
-    background-image: url(../img_sobrancelhas/spa_sobrancelhas.png);
+    background-image: url(../img_spa/pele_de_luxo.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
